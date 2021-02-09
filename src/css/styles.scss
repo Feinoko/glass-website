@@ -5,6 +5,37 @@
 @import './desktop';
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(to bottom right, $background-main, $background-second);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle1, .circle2 {
+  height: 200px;
+  width:200px;
+  border-radius: 50%;
+  background: radial-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.65));
+  position: absolute;
+  z-index: -5;
+}
+
+.circle1 {
+  top: 12%;
+  right: 10%;
+}
+
+.circle2 {
+  bottom: 12%;
+  left: 10%;
+}
+
+.dashboard {
+  
+  width: 70%;
+  height: 70%;
+  border-radius: 15px;
+  background: rgba($dashboard,0.4);
+  backdrop-filter: blur(15px);
 }
