@@ -4,3 +4,7 @@
 @import './utilities';
 @import './desktop';
 
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, $background-main, $background-second);
+}

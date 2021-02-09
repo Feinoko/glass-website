@@ -1,6 +1,11 @@
 Description of project / features
 ===============================
-->
+-> replicate glass website made by Dev Ed
+https://www.youtube.com/watch?v=O7WbVj5apxU&t=1029s&ab_channel=DevEd
+
+Color schemes:
+#68dcd9
+
 
 coding guidelines memo 
 =============
@@ -16,9 +21,9 @@ Current-task
 -> 
 ---
 Steps to complete:
-#1 : 
-#2 : 
-#3 : 
+#1 : all the markup done before touching styles, and using emmet amap // completed
+#2 : styling & layout
+#3 : add some animations / extra features using JS
 ---
 
 Main steps for MVP (minimum viable product) :
