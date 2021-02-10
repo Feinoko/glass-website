@@ -11,16 +11,39 @@ $text-main: #59819a;
 
 
 /* other */
+$circle-radius: 200px;
 $border-radius: 15px;
 
 /* mixin */
-@mixin flex-center {
+@mixin flex-hori-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin debug-layout {
-  border: 1px red solid;
-  background-color: rgb(196, 174, 174);
+@mixin flex-vert-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+// debugging
+
+@mixin debug-red {
+  border: 1px red solid;
+}
+
+@mixin debug-blue {
+  border: 1px blue solid;
+}
+
+@mixin debug-green {
+  border: 1px green solid;
+}
+
+@mixin circle-radius($multiplier) {
+  height: $multiplier*$circle-radius;
+  width: $multiplier*$circle-radius;
+}
+

@@ -18,8 +18,6 @@ body {
 }
 
 .circle1, .circle2 {
-  height: 200px;
-  width:200px;
   border-radius: 50%;
   background: radial-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.65));
   position: absolute;
@@ -27,13 +25,15 @@ body {
 }
 
 .circle1 {
-  top: 12%;
+  @include circle-radius(3);
+  top: -15%;
   right: 10%;
 }
 
 .circle2 {
-  bottom: 12%;
-  left: 10%;
+  @include circle-radius(2);
+  bottom: 6%;
+  left: 7%;
 }
 
 .dashboard {
@@ -65,22 +65,88 @@ SIDEBAR
 }
 
 .profile-card {
-  display: flex;
-  @include flex-center;
+  @include flex-vert-center;
   position: relative;
-  @include debug-layout;
+  @include debug-red;
   height: 25%;
   z-index: 5;
-}
 
-.profile-card__pic {
-  height: 65px;
-  width: 65px;
-  border-radius: 50%;
-  overflow: hidden;
-
-  img {
-    width: 85%;
-    position:relative;
+  &__pic {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+  
+    img {
+      width: 85%;
+      position:relative;
+    }
   }
 }
+
+.sidebar__menu {
+  @include debug-green;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 0;
+  
+  
+
+}
+
+.grouper {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  @include debug-red;
+  margin-left: 30%
+}
+
+.sidebar__icon1,
+.sidebar__icon2,
+.sidebar__icon3,
+.sidebar__icon4 {
+  @include debug-blue;
+  height: 30px;
+  width: 20%; /* sum with .grouper margin-left must be 50% to align in center */
+}
+
+.sidebar__icon1 {
+  background-image: url(../media/twitch.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sidebar__icon2 {
+  background-image: url(../media/steam.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sidebar__icon3 {
+  background-image: url(../media/controller-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sidebar__icon4 {
+  background-image: url(../media/library.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.sidebar__menu-item {
+  
+  height: 30px;
+  @include debug-green;
+}
+
+
