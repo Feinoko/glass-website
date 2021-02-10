@@ -2,7 +2,25 @@
 $background-main: #5df7f2;
 $background-second: #27afa6;
 $gamebar: #69ded5;
-$sidebar-main: #f1fbfc;
-$sidebar-second: #96b6b3;
+$sidebar-main: rgb(241, 251, 252, 0.65);
+$sidebar-second: rgb(186, 201, 199, 0.4);
 $dashboard: #eee;
 $text-main: #59819a;
+
+/* typography */
+
+
+/* other */
+$border-radius: 15px;
+
+/* mixin */
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin debug-layout {
+  border: 1px red solid;
+  background-color: rgb(196, 174, 174);
+}
