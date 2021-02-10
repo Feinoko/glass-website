@@ -67,7 +67,6 @@ SIDEBAR
 .profile-card {
   @include flex-vert-center;
   position: relative;
-  @include debug-red;
   height: 25%;
   z-index: 5;
 
@@ -85,22 +84,17 @@ SIDEBAR
 }
 
 .sidebar__menu {
-  @include debug-green;
   height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 1rem 0;
-  
-  
-
 }
 
 .grouper {
   display: flex;
   align-content: center;
   width: 100%;
-  @include debug-red;
   margin-left: 30%
 }
 
@@ -108,7 +102,6 @@ SIDEBAR
 .sidebar__icon2,
 .sidebar__icon3,
 .sidebar__icon4 {
-  @include debug-blue;
   height: 30px;
   width: 20%; /* sum with .grouper margin-left must be 50% to align in center */
 }
@@ -141,12 +134,36 @@ SIDEBAR
   background-position: center;
 }
 
-
-
 .sidebar__menu-item {
-  
   height: 30px;
-  @include debug-green;
+}
+
+.joinProCTA {
+  background: linear-gradient(to bottom right, $background-main, $background-second);
+  height: 15%;
+  width: 80%;
+  margin: 10% auto;
+  border-radius: $border-radius;
+  
+  &__text {
+    color: rgb(255, 255, 255);
+    @include debug-blue;
+    display: inline-block;
+    margin-left: 10%;
+    height: 100%;
+    margin-top: 3%;
+
+  }
+
+  &__pic {
+    @include debug-red;
+    width: 40%;
+    position: relative;
+    bottom: 15%;
+    float: right;
+    margin-right: 10%;
+  }
+
 }
 
 

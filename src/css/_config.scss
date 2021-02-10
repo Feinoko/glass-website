@@ -28,20 +28,6 @@ $border-radius: 15px;
   align-items: center;
 }
 
-// debugging
-
-@mixin debug-red {
-  border: 1px red solid;
-}
-
-@mixin debug-blue {
-  border: 1px blue solid;
-}
-
-@mixin debug-green {
-  border: 1px green solid;
-}
-
 @mixin circle-radius($multiplier) {
   height: $multiplier*$circle-radius;
   width: $multiplier*$circle-radius;
