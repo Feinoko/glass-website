@@ -50,7 +50,7 @@ problems/bugs to fix:
 
 Stashed tasks (put on backburner to keep focused on current task)
 ==========
-#1 : 
-#2 : 
+#1 : refactor css sidebar icons into mixins
+#2 : refactor layout of vertical navigation menu (responsiveness, centering issue)
 #3 : 
 ========== 
