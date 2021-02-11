@@ -64,6 +64,9 @@ SIDEBAR
   border-radius: $border-radius;
 }
 
+
+/* profile info section */
+
 .profile-card {
   @include flex-vert-center;
   position: relative;
@@ -83,6 +86,9 @@ SIDEBAR
   }
 }
 
+
+/* sidebar vertical navigation items */
+
 .sidebar__menu {
   height: 50%;
   display: flex;
@@ -91,7 +97,7 @@ SIDEBAR
   padding: 1rem 0;
 }
 
-.grouper {
+.sidebar-menu-items-grouper {
   display: flex;
   align-content: center;
   width: 100%;
@@ -138,14 +144,38 @@ SIDEBAR
   height: 30px;
 }
 
+
+
+/* CTA section at bottom left */
+
+.CTA-flex-wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
 .joinProCTA {
   background: linear-gradient(to bottom right, $background-main, $background-second);
   height: 15%;
   width: 80%;
   margin: 10% auto;
-  border-radius: $border-radius;
-  
-  
+  border-radius: 10px;
+  color: white;
+
+  &__text {
+    align-self: center;
+    flex-basis: 40%;
+    pointer-events: none;
+  }
+
+  &__pic {
+    background-image: url(../media/controller.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right 10px;
+    flex-basis: 40%;
+  }
+
 
 }
 
