@@ -145,24 +145,7 @@ SIDEBAR
   margin: 10% auto;
   border-radius: $border-radius;
   
-  &__text {
-    color: rgb(255, 255, 255);
-    @include debug-blue;
-    display: inline-block;
-    margin-left: 10%;
-    height: 100%;
-    margin-top: 3%;
-
-  }
-
-  &__pic {
-    @include debug-red;
-    width: 40%;
-    position: relative;
-    bottom: 15%;
-    float: right;
-    margin-right: 10%;
-  }
+  
 
 }
 
