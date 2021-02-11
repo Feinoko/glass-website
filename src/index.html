@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glass Website</title>
-  <link rel="shortcut icon" type="image/jpg" href="./media/controller-icon.png"/>
+  <link rel="shortcut icon" type="image/jpg" href="./media/controller-icon.png" />
   <meta name="description" content="a simple gaming interface (training purposes)">
   <meta name=”robots” content="index, follow">
 </head>
+
 <body>
-  
+
   <!-- floating bubbles -->
   <div class="circle1"></div>
   <div class="circle2"></div>
 
 
-<!-- dashboard -->
+  <!-- dashboard -->
   <div class="dashboard">
 
 
@@ -52,38 +54,50 @@
       </div>
     </section>
     <!-- main section -->
+
     <section class="mainspace">
-      <h1 class="mainspace__active-games"></h1>
-      <span class="mainspace__bar"></span>
-      <div class="game-info">
-        <!-- game 1 -->
-        <div class="game-info__pic"></div>
-        <div class="game-info__details">
-          <h3></h3>
-          <h4></h4>
-          <span class="game-info__completion-bar"></span>
+      <div class="mainspace-container">
+        <div class="active-games-grouper">
+          <h1 class="mainspace__active-games">Active Games</h1>
+          <span class="mainspace__bar"></span>
         </div>
-        <div class="game-info__perc"></div>
-    
-        <!-- game 2 -->
-        <div class="game-info__pic"></div>
-        <div class="game-info__details">
-          <h3></h3>
-          <h4></h4>
-          <span class="game-info__completion-bar"></span>
+        <div class="game-info">
+          <!-- game 1 -->
+          <div class="game-info__card">
+            <div class="game-info__pic"></div>
+            <div class="game-info__details">
+              <h3></h3>
+              <h4></h4>
+              <span class="game-info__completion-bar"></span>
+            </div>
+            <div class="game-info__perc"></div>
+          </div>
+
+          <!-- game 2 -->
+          <div class="game-info__card">
+            <div class="game-info__pic"></div>
+            <div class="game-info__details">
+              <h3></h3>
+              <h4></h4>
+              <span class="game-info__completion-bar"></span>
+            </div>
+            <div class="game-info__perc"></div>
+          </div>
+
+          <!-- game 3 -->
+          <div class="game-info__card">
+            <div class="game-info__pic"></div>
+            <div class="game-info__details">
+              <h3></h3>
+              <h4></h4>
+              <span class="game-info__completion-bar"></span>
+            </div>
+            <div class="game-info__perc"></div>
+          </div>
         </div>
-        <div class="game-info__perc"></div>
-    
-        <!-- game 3 -->
-        <div class="game-info__pic"></div>
-        <div class="game-info__details">
-          <h3></h3>
-          <h4></h4>
-          <span class="game-info__completion-bar"></span>
-        </div>
-        <div class="game-info__perc"></div>
       </div>
     </section>
+
 
 
   </div>
@@ -92,4 +106,5 @@
   <!-- unique entry point for all styles & script (use import in app.js) -->
   <script src="./app.js"></script>
 </body>
+
 </html>

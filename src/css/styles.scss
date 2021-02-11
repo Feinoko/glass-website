@@ -40,7 +40,7 @@ body {
   
   width: 70%;
   // max-width: 900px;
-  height: 70%;
+  height: 70vh;
   border-radius: $border-radius;
   background: rgba($dashboard,0.4);
   backdrop-filter: blur(15px);
@@ -59,7 +59,7 @@ SIDEBAR
   top:0;
   bottom:0;
   left:0;
-  width: 25%;
+  width: $sidebar-width;
   background: linear-gradient(to bottom right, $sidebar-main 66%, $sidebar-second 100%);
   border-radius: $border-radius;
 }
@@ -70,7 +70,7 @@ SIDEBAR
 .profile-card {
   @include flex-vert-center;
   position: relative;
-  height: 25%;
+  height: $profile-card-height;
   z-index: 5;
 
   &__pic {
@@ -165,7 +165,7 @@ SIDEBAR
   &__text {
     align-self: center;
     flex-basis: 40%;
-    pointer-events: none;
+    // pointer-events: none;
   }
 
   &__pic {
@@ -175,8 +175,62 @@ SIDEBAR
     background-position: bottom right 10px;
     flex-basis: 40%;
   }
+}
 
+
+/* ========
+MAIN SECTION
+=========== */
+
+/* Active games */
+
+.active-games-grouper {
+  height:25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.mainspace-container {
+  margin: 0 auto;
+  width: 85%;
+  @include debug-green;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainspace {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70vh;
+  left: $sidebar-width;
+  
+
+  &__bar {
+    display: inline-block;
+    height: 25px;
+    width: 30%;
+    background: linear-gradient(to bottom right, $sidebar-main 66%, $sidebar-second 100%);
+    border-radius: $border-radius/2;
+  }
 
 }
 
+.game-info {
+  @include debug-blue;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.game-info__card {
+  @include debug-red;
+  height: 125px;
+  width: 100%;
+}
 
