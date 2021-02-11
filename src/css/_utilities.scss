@@ -12,5 +12,14 @@
   border: 1px green solid;
 }
 
+@mixin layoutDebug($color) {
+  border: 1px #{$color} solid;
+}
+
+@mixin layoutDebugBg($color) {
+  border: 1px #{$color} solid;
+  background-color: $color;
+}
+
 //
 

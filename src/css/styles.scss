@@ -148,7 +148,7 @@ SIDEBAR
 
 /* CTA section at bottom left */
 
-.CTA-flex-wrapper {
+.CTA-flex-wrapper { /* layout helper */
   display: flex;
   justify-content: space-around;
   height: 100%;
@@ -191,7 +191,7 @@ MAIN SECTION
   justify-content: center
 }
 
-.mainspace-container {
+.mainspace-container { /* layout helper */
   margin: 0 auto;
   width: 85%;
   @include debug-green;
@@ -232,5 +232,30 @@ MAIN SECTION
   @include debug-red;
   height: 125px;
   width: 100%;
+  @include flex-hori-center;
+  // position: relative;
+
+  &-container { /* layout helper */
+    @include layoutDebug(yellow);
+    // position: absolute;
+    height: 85%;
+    width: 90%;
+    @include flex-hori-center;
+  }
+
+  &__pic {
+
+  }
+
+  &__details {
+    
+  }
+
+  &__perc {
+
+  }
+
 }
+
+
 
