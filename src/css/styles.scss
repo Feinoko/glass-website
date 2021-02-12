@@ -184,7 +184,7 @@ MAIN SECTION
 
 /* Active games */
 
-.active-games-grouper {
+.active-games-grouper { /* layout helper */
   height:25%;
   display: flex;
   flex-direction: column;
@@ -226,36 +226,62 @@ MAIN SECTION
   flex-direction: column;
   justify-content: space-around;
   margin: 20px 0;
-}
 
-.game-info__card {
-  @include debug-red;
-  height: 125px;
-  width: 100%;
-  @include flex-hori-center;
-  // position: relative;
-
-  &-container { /* layout helper */
-    @include layoutDebug(yellow);
-    // position: absolute;
-    height: 85%;
-    width: 90%;
+  &__card {
+    @include debug-red;
+    height: 125px;
+    width: 100%;
     @include flex-hori-center;
+    // position: relative;
+  
+    &-container { /* layout helper */
+      @include layoutDebug(yellow);
+      // position: absolute;
+      height: 85%;
+      width: 90%;
+      @include flex-hori(space-between);
+      padding: 0 2%;
+
+    }
   }
 
-  &__pic {
-
+  &__pic, &__details, &__perc {
+    @include layoutDebug(black);
+    height: 100%;
+    flex-basis: 15%;
   }
-
+  
   &__details {
+    flex-basis: 50%;
+  }
+  
+  &__perc {
     
   }
 
-  &__perc {
-
+  &__pic--pic1, &__pic--pic2, &__pic--pic3  {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
   }
 
+  &__pic--pic1 {
+    background-image: url(../media/assassins.png);
+  }
+
+  &__pic--pic2 {
+    background-image: url(../media/spiderman.png);
+  }
+
+  &__pic--pic3 {
+    background-image: url(../media/sackboy.png);
+  }
+
+
 }
+
+
 
 
 

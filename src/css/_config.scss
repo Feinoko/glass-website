@@ -24,6 +24,12 @@ $mainspace-width-offset: 7%;
   align-items: center;
 }
 
+@mixin flex-hori($justify: center, $align: stretch) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 @mixin flex-vert-center {
   display: flex;
   flex-direction: column;
