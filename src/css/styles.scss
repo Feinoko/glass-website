@@ -196,7 +196,7 @@ MAIN SECTION
 .mainspace-container { /* layout helper */
   margin: 0 auto;
   width: 85%;
-  @include debug-green;
+  // @include debug-green;
   position: relative;
   height: 70vh;
   display: flex;
@@ -225,7 +225,7 @@ MAIN SECTION
 /* Games cards section */
 
 .game-info {
-  @include layoutDebug(blue);
+  // @include layoutDebug(blue);
   flex-grow: 1;
   @include flex(column, space-around);
   display: flex;
@@ -234,25 +234,28 @@ MAIN SECTION
   margin: 20px 0;
 
   &__card {
-    @include layoutDebug();
+    // @include layoutDebug();
     height: 125px;
     width: 100%;
     @include flex(row, center, center);
+    background: linear-gradient(to bottom right, $sidebar-main 66%, $sidebar-second 100%);
+    border-radius: 10px;
+    box-shadow: 0 5px 5px -3px rgba(130, 130, 130, 0.3);
     // position: relative;
   
     &-container { /* layout helper */
-      @include layoutDebug(yellow);
+      // @include layoutDebug(yellow);
       // position: absolute;
       height: 85%;
-      width: 90%;
+      width: 92%;
       @include flex(row, space-between);
-      padding: 0 2%;
+      // padding: 0 2%;
 
     }
   }
 
   &__pic, &__details, &__perc {
-    @include layoutDebug(black);
+    // @include layoutDebug(black);
     height: 100%;
     flex-basis: 15%;
   }
@@ -262,10 +265,7 @@ MAIN SECTION
     @include flex(column, flex-start);
   }
   
-  &__perc {
-    
-  }
-
+  
   &__pic--pic1, &__pic--pic2, &__pic--pic3  {
     background-position: center center;
     background-repeat: no-repeat;
@@ -287,28 +287,40 @@ MAIN SECTION
 
 
   h3 {
-    @include layoutDebug();
+    // @include layoutDebug();
     flex-basis: 35%;
-    // padding-top: .5rem;
+    padding: .5rem 0;
   }
 
   h4 {
-    @include layoutDebug();
+    // @include layoutDebug();
     flex-basis: 25%;
-    // padding-top: .5rem;
+    padding: .5rem 0;
   }
 
   &__completion-bar {
     background: linear-gradient(to right, $sidebar-main 66%, $sidebar-second 100%);
     width: 100%;
-    @include layoutDebug();
+    // @include layoutDebug();
     flex-grow: 1;
-    margin: 9px 0;
+    margin: 5px 0;
     border-radius: 10px;
+    overflow: hidden;
   }
 
   &__filled-bar {
+    background: linear-gradient(to left, $background-main, lighten($background-second,10%));
+    transform: translateX(-40%);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
 
+  &__perc {
+    text-align: right;
+    background: linear-gradient(to top right, $background-main 50%, $background-second 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
 }
