@@ -30,6 +30,8 @@ $mainspace-width-offset: 7%;
   align-items: $align;
 }
 
+
+
 @mixin flex-vert-center {
   display: flex;
   flex-direction: column;

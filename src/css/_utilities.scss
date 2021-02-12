@@ -1,3 +1,13 @@
+// layout
+
+@mixin flex($direction: row, $justify: center, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
 // debugging
 
 @mixin debug-red {
@@ -12,13 +22,13 @@
   border: 1px green solid;
 }
 
-@mixin layoutDebug($color) {
-  border: 1px #{$color} solid;
+@mixin layoutDebug($color: red, $thickness: 1) {
+  border: #{$thickness}px #{$color} solid;
 }
 
-@mixin layoutDebugBg($color) {
-  border: 1px #{$color} solid;
-  background-color: $color;
+@mixin layoutDebugBg($color: red, $thickness: 1px) {
+  border: #{$thickness} #{$color} solid;
+  background-color: lighten($color, 40%);
 }
 
 //

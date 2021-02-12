@@ -68,7 +68,7 @@ SIDEBAR
 /* profile info section */
 
 .profile-card {
-  @include flex-vert-center;
+  @include flex(column, center, center);
   position: relative;
   height: $profile-card-height;
   z-index: 5;
@@ -145,7 +145,6 @@ SIDEBAR
 }
 
 
-
 /* CTA section at bottom left */
 
 .CTA-flex-wrapper { /* layout helper */
@@ -176,6 +175,9 @@ SIDEBAR
     flex-basis: 40%;
   }
 }
+
+
+
 
 
 /* ========
@@ -219,19 +221,23 @@ MAIN SECTION
 
 }
 
+
+/* Games cards section */
+
 .game-info {
-  @include debug-blue;
+  @include layoutDebug(blue);
   flex-grow: 1;
+  @include flex(column, space-around);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 20px 0;
 
   &__card {
-    @include debug-red;
+    @include layoutDebug();
     height: 125px;
     width: 100%;
-    @include flex-hori-center;
+    @include flex(row, center, center);
     // position: relative;
   
     &-container { /* layout helper */
@@ -239,7 +245,7 @@ MAIN SECTION
       // position: absolute;
       height: 85%;
       width: 90%;
-      @include flex-hori(space-between);
+      @include flex(row, space-between);
       padding: 0 2%;
 
     }
