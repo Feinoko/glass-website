@@ -259,6 +259,7 @@ MAIN SECTION
   
   &__details {
     flex-basis: 50%;
+    @include flex(column, flex-start);
   }
   
   &__perc {
@@ -284,6 +285,31 @@ MAIN SECTION
     background-image: url(../media/sackboy.png);
   }
 
+
+  h3 {
+    @include layoutDebug();
+    flex-basis: 35%;
+    // padding-top: .5rem;
+  }
+
+  h4 {
+    @include layoutDebug();
+    flex-basis: 25%;
+    // padding-top: .5rem;
+  }
+
+  &__completion-bar {
+    background: linear-gradient(to right, $sidebar-main 66%, $sidebar-second 100%);
+    width: 100%;
+    @include layoutDebug();
+    flex-grow: 1;
+    margin: 9px 0;
+    border-radius: 10px;
+  }
+
+  &__filled-bar {
+
+  }
 
 }
 
