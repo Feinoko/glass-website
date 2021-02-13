@@ -39,7 +39,6 @@ body {
 .dashboard {
   
   width: 70%;
-  // max-width: 900px;
   height: 70vh;
   border-radius: $border-radius;
   background: rgba($dashboard,0.4);
@@ -110,34 +109,25 @@ SIDEBAR
 .sidebar__icon4 {
   height: 30px;
   width: 20%; /* sum with .grouper margin-left must be 50% to align in center */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .sidebar__icon1 {
   background-image: url(../media/twitch.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .sidebar__icon2 {
   background-image: url(../media/steam.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .sidebar__icon3 {
   background-image: url(../media/controller-icon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .sidebar__icon4 {
   background-image: url(../media/library.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .sidebar__menu-item {
@@ -164,7 +154,6 @@ SIDEBAR
   &__text {
     align-self: center;
     flex-basis: 40%;
-    // pointer-events: none;
   }
 
   &__pic {
@@ -241,21 +230,16 @@ MAIN SECTION
     background: linear-gradient(to bottom right, $sidebar-main 66%, $sidebar-second 100%);
     border-radius: 10px;
     box-shadow: 0 5px 5px -3px rgba(130, 130, 130, 0.3);
-    // position: relative;
   
     &-container { /* layout helper */
-      // @include layoutDebug(yellow);
-      // position: absolute;
       height: 85%;
       width: 92%;
       @include flex(row, space-between);
-      // padding: 0 2%;
 
     }
   }
 
   &__pic, &__details, &__perc {
-    // @include layoutDebug(black);
     height: 100%;
     flex-basis: 15%;
   }
