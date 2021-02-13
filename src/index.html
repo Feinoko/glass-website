@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glass Website</title>
+  <title>Glass Website / Dashboard</title>
   <link rel="shortcut icon" type="image/jpg" href="./media/controller-icon.png" />
   <meta name="description" content="a simple gaming interface (training purposes)">
   <meta name=”robots” content="index, follow">
@@ -13,22 +13,22 @@
 <body>
 
   <!-- floating bubbles -->
-  <div class="circle1"></div>
-  <div class="circle2"></div>
+  <aside class="circle1"></aside>
+  <aside class="circle2"></aside>
 
 
   <!-- dashboard -->
-  <div class="dashboard">
+  <main class="dashboard">
 
 
     <!-- sidebar menu -->
     <section class="sidebar">
-      <div class="profile-card">
-        <div class="profile-card__pic"><img src="./media/Profile Pic Code Pen.jpg" alt="user profile picture"></div>
+      <section class="profile-card">
+        <aside class="profile-card__pic"><img src="./media/Profile Pic Code Pen.jpg" alt="user profile picture"></aside>
         <h2 class="profile-card__full-name">Jonathan Le Corre</h2>
         <h3 class="profile-card__title">Pro Member</h3>
-      </div>
-      <div class="sidebar__menu">
+      </section>
+      <section class="sidebar__menu">
         <div class="sidebar-menu-items-grouper">
           <div class="sidebar__icon1"></div>
           <h2 class="sidebar__menu-item">Streams</h2>
@@ -45,7 +45,7 @@
           <div class="sidebar__icon4"></div>
           <h2 class="sidebar__menu-item">Library</h2>
         </div>
-      </div>
+      </section>
       <div class="joinProCTA">
         <div class="CTA-flex-wrapper">
           <h2 class="joinProCTA__text">Join pro <br> for free games.</h2>
@@ -61,18 +61,18 @@
           <h1 class="mainspace__active-games">Active Games</h1>
           <span class="mainspace__bar"></span>
         </div>
-        <div class="game-info">
+        <section class="game-info">
           <!-- game 1 -->
           <div class="game-info__card">
             <div class="game-info__card-container">
-              <div class="game-info__pic game-info__pic--pic1"></div>
-              <div class="game-info__details">
+              <aside class="game-info__pic game-info__pic--pic1"></aside>
+              <section class="game-info__details">
                 <h3>Assassin Creed Valhalla</h3>
                 <h4>PS5 version</h4>
                 <div class="game-info__completion-bar">
                   <div class="game-info__filled-bar"></div>
                 </div>
-              </div>
+              </section>
               <div class="game-info__perc">60%</div>
             </div>
           </div>
@@ -80,14 +80,14 @@
           <!-- game 2 -->
           <div class="game-info__card">
             <div class="game-info__card-container">
-              <div class="game-info__pic game-info__pic--pic2"></div>
-              <div class="game-info__details">
+              <aside class="game-info__pic game-info__pic--pic2"></aside>
+              <section class="game-info__details">
                 <h3>Spiderman Miles Morales</h3>
                 <h4>PS4 version</h4>
                 <div class="game-info__completion-bar">
                   <div class="game-info__filled-bar"></div>
                 </div>
-              </div>
+              </section>
               <div class="game-info__perc">60%</div>
             </div>
           </div>
@@ -95,24 +95,24 @@
           <!-- game 3 -->
           <div class="game-info__card">
             <div class="game-info__card-container">
-              <div class="game-info__pic game-info__pic--pic3"></div>
-              <div class="game-info__details">
+              <aside class="game-info__pic game-info__pic--pic3"></aside>
+              <section class="game-info__details">
                 <h3>Sackboy Adventures</h3>
                 <h4>PS4 version</h4>
                 <div class="game-info__completion-bar">
                   <div class="game-info__filled-bar"></div>
                 </div>
-              </div>
+              </section>
               <div class="game-info__perc">60%</div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
 
 
 
-  </div>
+  </main>
 
 
   <!-- unique entry point for all styles & script (use import in app.js) -->
